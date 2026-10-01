@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <string>
 #include <iomanip>
 using namespace std;
@@ -6,7 +6,7 @@ using namespace std;
 int main() {
 
 
-/*
+
     Part 2: Practice
     A) 1. OK
     2. Must not start with digit
@@ -131,6 +131,39 @@ int main() {
     result: 200000 -> 200000 s = 2 d 7 h 33 min 20 s
 
     K)
+    #include <iostream>
+    using namespace std;
+
+    int main() {
+        const int NOTEBOOK = 8000, PEN = 2500, CALC = 95000;
+        const int VAT_PERCENT = 12;
+        int qNotebook, qPen, qCalc;
+        cout << "Enter three quantities: ";
+        cin >> qNotebook >> qPen >> qCalc;
+        int totalNotebook = qNotebook * NOTEBOOK;
+        int totalPen = qPen * PEN;
+        int totalCalc = qCalc * CALC;
+        int subtotal = totalNotebook + totalPen + totalCalc;
+        int VAT = subtotal * VAT_PERCENT / 100;
+        int total = subtotal + VAT;
+        cout << "Notebook x " << qNotebook << " = " << totalNotebook << endl;
+        cout << "Pen x " << qPen << " = " << totalPen << endl;
+        cout << "Calculator x " << qCalc << " = " << totalCalc << endl;
+        cout << "Subtotal: " << subtotal << " so'm" << endl;
+        cout << "VAT " << VAT_PERCENT << "%: " << VAT << " so'm" << endl;
+        cout << "TOTAL: " << total << " so'm" << endl;
+        int paid;
+        cout << "Paid: ";
+        cin >> paid;
+        cout << "Change: " << paid - total << " so'm" << endl;
+        return 0;
+
+    }
+    With input 2 3 2 and 250000: TOTAL: 239120 Change: 10880
+    A classmate writes the VAT as subtotal * (VAT_PERCENT / 100): VAT_PERCENT and 100 are both integers and writing (VAT_PERCENT / 100) forces the integer division first, which evaluates (12 / 100) to 0. Multiplying subtotal * 0 gives 0.
+
+    L) 
+
 
 */
 
