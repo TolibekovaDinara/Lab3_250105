@@ -1,10 +1,12 @@
 #include <iostream>
+#include <string>
+#include <iomanip>
 using namespace std;
 
 int main() {
 
 
-    /*
+/*
     Part 2: Practice
     A) 1. OK
     2. Must not start with digit
@@ -62,12 +64,70 @@ int main() {
     6. F. '5' is a character, whereas 5 is an integer
     7. T
 
-    
+    G) 1. a  2. c  3. c  4. b  5. b  6. b  7. d
+
+    H)
+    #include <iostream>
+    #include <string>
+    #include <iomanip>
+    using namespace std;
+
+    int main() {
+        string name;
+        int age;
+        float height;
+        char group;
+        bool isFullTime;
+
+        cout << "Enter your first name, age, height, group letter, full-time (0/1): ";
+        cin >> name >> age >> height >> group >> isFullTime;
+
+        cout << "--- Student card ---\n";
+        cout << left << setw(10) << "Name:" << right << setw(10) << name << endl;
+        cout << left << setw(10) << "Age:" << right << setw(10) << age << endl;
+        cout << left << setw(10) << "Height:" << right << setw(10) << height << " m\n";
+        cout << left << setw(10) << "Group:" << right << setw(10) << group << endl;
+        cout << left << setw(10) << "Full-time:" << right << setw(10) << isFullTime << endl;
+        cout << left << setw(10) << "Age in months:" << right << setw(10) << (age *12) << endl;
+        cout << "Bytes: int " << sizeof(age) << ", float " << sizeof(height) << ", char " << sizeof(group) << ", bool " << sizeof(isFullTime) << endl;
+        return 0;
+    }
+
+    I)
+    #include <iostream>
+    using namespace std;
+
+    int main() {
+        int a, b;
+        cout << "Enter two integers: ";
+        cin >> a >> b;
+        cout << "Sum: " << a + b << endl;
+        cout << "Difference: " << a - b << endl;
+        cout << "Product: " << (a * b) << endl;
+        cout << "Quotient: " << (a / b) << endl;
+        cout << "Remainder: " << (a % b) << endl;
+        cout << "Exact: " << (double)a / b << endl;
+        return 0;
+    }
+    Now run it with -17 5. Quotient: -3, Remainder: -2, Exact: -3.4
+
+    J)
+    #inlcude <iostream>
+    using namespace std;
+
+    int main() {
+        int seconds;
+        cout << "Enter seconds: ";
+        cin >> seconds;
+        int days = seconds / 86400;
+        int remAfterDays = seconds % 86400;
+        
+    }
 
 
+*/
 
 
-     */
     cout << "Hello, CS102!\n\n";
 
     int students = 15;
