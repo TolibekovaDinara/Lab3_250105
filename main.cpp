@@ -112,18 +112,25 @@ int main() {
     Now run it with -17 5. Quotient: -3, Remainder: -2, Exact: -3.4
 
     J)
-    #inlcude <iostream>
+    #include <iostream>
     using namespace std;
 
     int main() {
-        int seconds;
+        int totalSeconds;
         cout << "Enter seconds: ";
-        cin >> seconds;
-        int days = seconds / 86400;
-        int remAfterDays = seconds % 86400;
-        
+        cin >> totalSeconds;
+        int days = totalSeconds / 86400;
+        int remAfterDays = totalSeconds % 86400;
+        int hours = remAfterDays / 3600;
+        int remAfterHours = remAfterDays % 3600;
+        int minutes = remAfterHours / 60;
+        int seconds = remAfterHours % 60;
+        cout << totalSeconds << " s = " << days << " d " << hours << " h " << minutes << " min " << seconds << " s" << endl;
+        return 0;
     }
+    result: 200000 -> 200000 s = 2 d 7 h 33 min 20 s
 
+    K)
 
 */
 
