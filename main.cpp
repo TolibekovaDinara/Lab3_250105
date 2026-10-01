@@ -38,7 +38,20 @@ int main() {
     cout << "The number's hundreds is " << hund << "\n";
     cout << "The number's thousands is " << thou << endl;
 
+    int m = 5;
+    int k = m++ + 2;
+    int l = ++m * 2;
 
+    cout << "The other given number is " << m << endl;
+    cout << "Then we make some changes and get " << k << endl;
+    cout << "Then we make some more changes and get " << l << "\n\n";
+
+    double h1, h2, h3;
+    cout << "In the next line, you need to enter three numbers.\n";
+    cin >> h1 >> h2 >> h3;
+    double sum = h1 + h2 + h3;
+    double average = sum / 3;
+    cout << "The average is " << average << endl;
 
 
     return 0;
