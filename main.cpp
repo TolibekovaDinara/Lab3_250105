@@ -1,12 +1,66 @@
-/*#include <iostream>
+/* Part 1
+#include <iostream>
 #include <string>
 #include <iomanip>
 using namespace std;
 
 int main() {
+    cout << "Hello, CS102!\n\n";
+
+    int students = 15;
+    double GPA;
+    GPA = 4.5;
+    const double VAT = 0.12;
+
+    cout << "Students: " << students << endl;
+    cout << "GPA: " << GPA << endl;
+    cout << "VAT: " << VAT << "\n\n";
+
+    char c = 'A';
+    cout << c << endl;
+    cout << c + 1 << endl;
+    cout << char(c +1) << endl;
+    cout << false << " " << true << endl;
+
+    int age;
+    double height;
+    cout << "Age and height: ";
+    cin >> age >> height;
+    cout << "Age " << age << ", height " << height << " m" << endl;
+    cout << "\tTab\nNew line" << endl;
+
+    int n = 4827;
+    int units = n % 10;
+    int tens = n / 10 % 10;
+    int hund = n / 100 % 10;
+    int thou = n / 1000;
+
+    cout << "\nThe given number is " << n << endl;
+    cout << "The number's units is " << units << endl;
+    cout << "The number's tens is " << tens << endl;
+    cout << "The number's hundreds is " << hund << "\n";
+    cout << "The number's thousands is " << thou << endl;
+
+    int m = 5;
+    int k = m++ + 2;
+    int l = ++m * 2;
+
+    cout << "The other given number is " << m << endl;
+    cout << "Then we make some changes and get " << k << endl;
+    cout << "Then we make some more changes and get " << l << "\n\n";
+
+    double h1, h2, h3;
+    cout << "In the next line, you need to enter three numbers.\n";
+    cin >> h1 >> h2 >> h3;
+    double sum = h1 + h2 + h3;
+    double average = sum / 3;
+    cout << "The average is " << average << endl;
 
 
+    return 0;
+}*/
 
+/*
     Part 2: Practice
     A) 1. OK
     2. Must not start with digit
@@ -162,63 +216,43 @@ int main() {
     With input 2 3 2 and 250000: TOTAL: 239120 Change: 10880
     A classmate writes the VAT as subtotal * (VAT_PERCENT / 100): VAT_PERCENT and 100 are both integers and writing (VAT_PERCENT / 100) forces the integer division first, which evaluates (12 / 100) to 0. Multiplying subtotal * 0 gives 0.
 
-    L) 
+    L)
+    1. what does it give for c = 25: 57 (Becuase both 9 and 5 are integers, 9/5=1)
+    what should it give: 77 ((9/5)*25 +32 = 77)
+    what is the one-character fix: double f = 9.0 / 5 * c +32;
 
+    2.
+    #include <iostream>
+    using namespace std;
+    int main() {
+        int n;
+        cout << "Enter a 4 digit integer: ";
+        cin >> n;
+        int thou = n / 1000;
+        int hund = n / 100 % 10;
+        int tens = n / 10 % 10;
+        int units = n % 10;
+        int sum = thou + hund + tens + units;
+        cout << "Digit sum: " << sum << endl;
+        return 0;
+    }
 
+    3.
+    #include <iostream>
+    using namespace std;
+    int main() {
+        int amount;
+        cout << "Enter amount in so'm: ";
+        cin >> amount;
+        int notes100k = amount / 100000;
+        amount %= 100000;
+        int notes10k = amount / 10000;
+        amount %= 10000;
+        int notes1k = amount / 1000;
+        int remainder = amount % 1000;
+        cout << notes100k << " x100000, " << notes10k << " x10000, " << notes1k << "x1000, remainder " << remainder << ".";
+        return 0;
+    }
 */
 
 
-    cout << "Hello, CS102!\n\n";
-
-    int students = 15;
-    double GPA;
-    GPA = 4.5;
-    const double VAT = 0.12;
-
-    cout << "Students: " << students << endl;
-    cout << "GPA: " << GPA << endl;
-    cout << "VAT: " << VAT << "\n\n";
-
-    char c = 'A';
-    cout << c << endl;
-    cout << c + 1 << endl;
-    cout << char(c +1) << endl;
-    cout << false << " " << true << endl;
-
-    int age;
-    double height;
-    cout << "Age and height: ";
-    cin >> age >> height;
-    cout << "Age " << age << ", height " << height << " m" << endl;
-    cout << "\tTab\nNew line" << endl;
-
-    int n = 4827;
-    int units = n % 10;
-    int tens = n / 10 % 10;
-    int hund = n / 100 % 10;
-    int thou = n / 1000;
-
-    cout << "\nThe given number is " << n << endl;
-    cout << "The number's units is " << units << endl;
-    cout << "The number's tens is " << tens << endl;
-    cout << "The number's hundreds is " << hund << "\n";
-    cout << "The number's thousands is " << thou << endl;
-
-    int m = 5;
-    int k = m++ + 2;
-    int l = ++m * 2;
-
-    cout << "The other given number is " << m << endl;
-    cout << "Then we make some changes and get " << k << endl;
-    cout << "Then we make some more changes and get " << l << "\n\n";
-
-    double h1, h2, h3;
-    cout << "In the next line, you need to enter three numbers.\n";
-    cin >> h1 >> h2 >> h3;
-    double sum = h1 + h2 + h3;
-    double average = sum / 3;
-    cout << "The average is " << average << endl;
-
-
-    return 0;
-}
