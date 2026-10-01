@@ -27,6 +27,29 @@ int main() {
     7. The value of 𝜋, never changing: const double pi = 3.14;
     8. World population, about 8.1 billion: long long population = 8100000000;
 
+    C) 1. 3
+    2. 2
+    3. 17
+    4. 3.4
+    5. -3
+    6. -2
+    7. 13
+    8. -2
+    9. 3
+    10. 0
+    11. 2
+    12. 7 7 14
+
+    D) 1. a = 10, b = 3, working: a = 7+3
+    2. a = 10, b = 7, working: b = 10-3;
+    3. a = 3, b = 7, working a=10-7;
+    4. a = 3, b = 14, working: b=7*2
+    5. a = 5, b = 14, working: a=14 % 3 + 3
+    6. a = 5, b = -2, working: b=14/4-5
+
+    What did lines 1–3 do to the original values 7 and 3? They swapped the values of a and b.
+
+    
 
 
 
