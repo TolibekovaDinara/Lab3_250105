@@ -49,6 +49,19 @@ int main() {
 
     What did lines 1–3 do to the original values 7 and 3? They swapped the values of a and b.
 
+    E) a) Syntax error. cout << "Result: " << 42 << endl;
+    b) Logic error: double avg = (a + b + c) / 3.0;
+    c) Syntax error: char grade = 'A';
+    d) Syntax error: cin >> age;
+
+    F) 1. T
+    2. F. C++ is case-sensitive, so Total and total are distinct identifiers
+    3. F. Both operators are integers, so 7 / 2 = 3
+    4. T
+    5. F. cin >> stops reading at whitespace
+    6. F. '5' is a character, whereas 5 is an integer
+    7. T
+
     
 
 
