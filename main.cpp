@@ -2,6 +2,36 @@
 using namespace std;
 
 int main() {
+
+
+    /*
+    Part 2: Practice
+    A) 1. OK
+    2. Must not start with digit
+    3. Ok
+    4. Must not be a keyword
+    5. Must be with no space
+    6. OK
+    7. Can't contain the "-"
+    8. OK
+    9. OK
+    10. Must not be a keyword
+
+    B)
+    1. Number of students in the group: int students = 15;
+    2. A student’s GPA: double GPA = 4.5;
+    3. First letter of your surname: char first_letter = 'T';
+    4. Is the library open? bool isOpen = true;
+    5. Temperature in Tashkent,◦C: float temp = 30.5;
+    6. Seconds in a (non-leap) year: int secondsInYear = 31536000;
+    7. The value of 𝜋, never changing: const double pi = 3.14;
+    8. World population, about 8.1 billion: long long population = 8100000000;
+
+
+
+
+
+     */
     cout << "Hello, CS102!\n\n";
 
     int students = 15;
