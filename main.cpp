@@ -1,4 +1,8 @@
-/* Part 1
+/*
+ Name: Dinara Tolibekova
+ ID: 250105 SED1
+
+    Part 1
 #include <iostream>
 #include <string>
 #include <iomanip>
